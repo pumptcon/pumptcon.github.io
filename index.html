@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>펌프티콘 (PUMPCON) - Pump Touch Controller</title>
+    <title>펌프티콘 (PUMPTCON) - Pump Touch Controller</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -88,7 +88,7 @@
                     P
                 </div>
                 <div>
-                    <span class="font-black text-lg sm:text-xl tracking-tight text-white block">펌프티콘 <span class="text-cyan-400 text-xs sm:text-sm font-semibold ml-1">PUMPCON</span></span>
+                    <span class="font-black text-lg sm:text-xl tracking-tight text-white block">펌프티콘 <span class="text-cyan-400 text-xs sm:text-sm font-semibold ml-1">PUMPTCON</span></span>
                 </div>
             </div>
 
@@ -100,236 +100,95 @@
                 <a href="#guide" class="hover:text-cyan-400 transition">연결 가이드</a>
             </nav>
 
-            <div class="flex items-center space-x-3">
-                <button onclick="downloadSourceCode()" class="px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-black text-xs sm:text-sm transition shadow-lg neon-glow-cyan flex items-center space-x-1.5">
-                    <i class="fa-solid fa-download"></i>
-                    <span>소스 다운로드</span>
-                </button>
-            </div>
         </div>
     </header>
 
     <main class="flex-1">
         <!-- Hero Section -->
         <section id="about" class="relative py-20 lg:py-32 overflow-hidden border-b border-slate-800/60">
-            <!-- Glow background spheres -->
             <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none"></div>
             <div class="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-red-500/10 blur-[100px] rounded-full pointer-events-none"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold mb-6">
                     <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-                    <span>Pump Touch Controller (PUMPCON)</span>
+                    <span>Pump Touch Controller (PUMTPCON)</span>
                 </div>
 
                 <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 leading-tight">
-                    모바일 기기를 손안의 <br class="hidden sm:inline" />
-                    <span class="gradient-text">펌프 아케이드 컨트롤러</span>로
+                    모바일 기기를 통한 신개념<br class="hidden sm:inline" />
+                    <span class="gradient-text">펌프 게임 컨트롤러</span>
                 </h1>
 
                 <p class="max-w-2xl mx-auto text-slate-300 text-base sm:text-lg lg:text-xl font-normal leading-relaxed mb-10">
-                    <strong class="text-white font-bold">펌프티콘(PUMPCON)</strong>은 안드로이드 스마트폰과 태블릿 PC의 터치 화면을 이용하는 반응형 컨트롤러 앱입니다.<br class="hidden sm:inline" />
-                    스팀 PC용 <span class="text-cyan-400 font-bold">펌프 잇 업 라이즈</span>와 <span class="text-amber-400 font-bold">X새니티</span> 게임을 언제 어디서나 손쉽고 재미있게 플레이해 보세요!
+                    <strong class="text-white font-bold">펌프티콘(PUMPTCON)</strong>은<br class="hidden sm:inline" />
+                    Pump Touch Controller의 약어로<br class="hidden sm:inline" />
+                    안드로이드 스마트폰과 태블릿 PC를 통한<br class="hidden sm:inline" />
+                    터치 기반 반응형 컨트롤러 앱입니다.<br class="hidden sm:inline" />
+                    윈도우 OS 기반 <span class="text-cyan-400 font-bold">펌프 잇 업 라이즈</span>와 <span class="text-amber-400 font-bold">X새니티</span> 게임 및<br class="hidden sm:inline" />
+                    펌프 기반의 각종 게임들에서 사용 가능합니다.
                 </p>
 
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <button onclick="downloadSourceCode()" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-base transition shadow-xl flex items-center justify-center space-x-2">
-                        <i class="fa-solid fa-file-arrow-down text-lg"></i>
-                        <span>index.html 소스코드 받기</span>
-                    </button>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">              
                     <a href="#features" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-200 font-extrabold text-base transition flex items-center justify-center space-x-2">
                         <span>주요 장점 둘러보기</span>
                         <i class="fa-solid fa-arrow-down text-sm"></i>
                     </a>
                 </div>
 
-                <!-- Stats / Quick Info -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-16 pt-10 border-t border-slate-800/80">
-                    <div class="p-4 rounded-2xl bg-[#111827]/60 border border-slate-800">
-                        <div class="text-2xl sm:text-3xl font-black text-cyan-400">0ms</div>
-                        <div class="text-xs text-slate-400 font-medium mt-1">초고속 WebSocket 입력</div>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-[#111827]/60 border border-slate-800">
-                        <div class="text-2xl sm:text-3xl font-black text-amber-400">4 Modes</div>
-                        <div class="text-xs text-slate-400 font-medium mt-1">1P / 2P / Half / Double</div>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-[#111827]/60 border border-slate-800">
-                        <div class="text-2xl sm:text-3xl font-black text-red-400">QR Sync</div>
-                        <div class="text-xs text-slate-400 font-medium mt-1">QR 스캔 원클릭 PC 연동</div>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-[#111827]/60 border border-slate-800">
-                        <div class="text-2xl sm:text-3xl font-black text-emerald-400">Haptic</div>
-                        <div class="text-xs text-slate-400 font-medium mt-1">손맛 느끼는 터치 진동</div>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!-- Features / Strengths Section -->
+        <!-- Features Section -->
         <section id="features" class="py-20 bg-[#0d121f] border-b border-slate-800/60">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-2">Core Advantages</h2>
-                    <p class="text-3xl sm:text-4xl font-black text-white">소스 분석으로 증명된 펌프티콘의 장점</p>
+                    <p class="text-3xl sm:text-4xl font-black text-white">펌프티콘의 주요 장점</p>
                     <p class="text-slate-400 text-sm sm:text-base mt-3">모바일 터치 환경에 맞춰 세심하게 설계된 핵심 기능들을 확인하세요.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Feature 1 -->
                     <div class="bg-[#111827] border border-slate-800/80 hover:border-cyan-500/50 rounded-3xl p-6 transition duration-300 flex flex-col justify-between group shadow-lg">
-                        <div>
-                            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-5 group-hover:scale-110 transition duration-300">
-                                <i class="fa-solid fa-gamepad"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-white mb-2">다양한 게임 모드 & 레이아웃</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed">
-                                Single 1P, Single 2P, Half, Double 등 펌프 잇 업의 모든 플레이 방식을 지원하며, 아케이드 스타일부터 모바일 최적화 및 건반 스타일까지 4가지 레이아웃 버전을 제공합니다.
-                            </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs text-cyan-400 font-semibold">
-                            <span>1P / 2P / Half / Double</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-
-                    <!-- Feature 2 -->
-                    <div class="bg-[#111827] border border-slate-800/80 hover:border-amber-500/50 rounded-3xl p-6 transition duration-300 flex flex-col justify-between group shadow-lg">
-                        <div>
-                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl mb-5 group-hover:scale-110 transition duration-300">
-                                <i class="fa-solid fa-bolt"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-white mb-2">초고속 입력 & 터치 최적화</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed">
-                                멀티터치 이벤트(<code class="text-amber-300">touchstart/end</code>) 정밀 제어로 터치 지연을 최소화하였으며, 자동 화면 고정(Landscape) 및 꺼짐 방지(Wake Lock)로 끊김 없는 플레이 환경을 제공합니다.
-                            </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs text-amber-400 font-semibold">
-                            <span>Low Latency Touch API</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="bg-[#111827] border border-slate-800/80 hover:border-red-500/50 rounded-3xl p-6 transition duration-300 flex flex-col justify-between group shadow-lg">
                         <div>
                             <div class="w-12 h-12 rounded-2xl bg-red-500/10 border border-red-500/30 flex items-center justify-center text-red-400 text-xl mb-5 group-hover:scale-110 transition duration-300">
                                 <i class="fa-solid fa-qrcode"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-white mb-2">QR 코드 원클릭 PC 연동</h3>
+                            <h3 class="text-xl font-bold text-white mb-2">간단한 PC 연동</h3>
                             <p class="text-slate-400 text-sm leading-relaxed">
-                                IP 주소를 일일이 입력할 필요 없이 PC 수신기 화면의 QR 코드를 스캔(html5-qrcode)하면 웹소켓 통신으로 몇 초 만에 간편하게 연동됩니다.
+                                윈도용 리시버 프로그램을 켜고 화면에 보이는<br>IP 주소를 앱에 입력하면 간편하게 연동됩니다.
                             </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs text-red-400 font-semibold">
-                            <span>WebSocket & Scan Sync</span>
-                            <i class="fa-solid fa-chevron-right"></i>
                         </div>
                     </div>
 
-                    <!-- Feature 4 -->
-                    <div class="bg-[#111827] border border-slate-800/80 hover:border-purple-500/50 rounded-3xl p-6 transition duration-300 flex flex-col justify-between group shadow-lg">
+                    <div class="bg-[#111827] border border-slate-800/80 hover:border-amber-500/50 rounded-3xl p-6 transition duration-300 flex flex-col justify-between group shadow-lg">
                         <div>
-                            <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl mb-5 group-hover:scale-110 transition duration-300">
-                                <i class="fa-solid fa-vibration"></i>
+                            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-5 group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-gamepad"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-white mb-2">생생한 햅틱(진동) 피드백</h3>
+                            <h3 class="text-xl font-bold text-white mb-2">다양한 게임 모드 & 버튼 배열</h3>
                             <p class="text-slate-400 text-sm leading-relaxed">
-                                발판을 누르는 듯한 조작감을 전해주기 위해 안드로이드 전용 햅틱 루프와 iOS 우회 스위치 기법을 통해 강력한 터치 진동 피드백을 전달합니다.
+                                싱글 1P / 싱글 2P / 하프 / 더블 4가지<br>플레이 방식을 지원하며, 아케이드 배열부터<br>모바일 최적화 및 건반형 배열까지 가로 화면에<br>최적화 된 다양한 버튼 배열을 제공합니다.
                             </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs text-purple-400 font-semibold">
-                            <span>Tactile Haptic Feedback</span>
-                            <i class="fa-solid fa-chevron-right"></i>
                         </div>
                     </div>
 
-                    <!-- Feature 5 -->
-                    <div class="bg-[#111827] border border-slate-800/80 hover:border-blue-500/50 rounded-3xl p-6 transition duration-300 flex flex-col justify-between group shadow-lg">
+                    <div class="bg-[#111827] border border-slate-800/80 hover:border-red-500/50 rounded-3xl p-6 transition duration-300 flex flex-col justify-between group shadow-lg">
                         <div>
-                            <div class="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl mb-5 group-hover:scale-110 transition duration-300">
-                                <i class="fa-solid fa-palette"></i>
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl mb-5 group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-bolt"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-white mb-2">시각 효과 & 이미지 커스텀</h3>
+                            <h3 class="text-xl font-bold text-white mb-2">동시 입력 & 터치 진동</h3>
                             <p class="text-slate-400 text-sm leading-relaxed">
-                                화려한 '네온 글라이드(Neon Glow)' 효과와 '단색(Full)' 모드를 지원하며, 사용자가 직접 원하는 이미지를 버튼 배경으로 적용할 수 있습니다.
+                                멀티 터치 지원해 여러 버튼 동시에 누를 수 있고<br>터치 진동 및 화면 꺼짐방지 기능을 지원 하며<br>단색과 네온 두가지 버튼 색상을 지원합니다.
                             </p>
                         </div>
-                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs text-blue-400 font-semibold">
-                            <span>Neon LED & Custom Image</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
 
-                    <!-- Feature 6 -->
-                    <div class="bg-[#111827] border border-slate-800/80 hover:border-emerald-500/50 rounded-3xl p-6 transition duration-300 flex flex-col justify-between group shadow-lg">
-                        <div>
-                            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl mb-5 group-hover:scale-110 transition duration-300">
-                                <i class="fa-solid fa-floppy-disk"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-white mb-2">스마트한 설정 영구 저장</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed">
-                                설정한 모드, 버튼 레이아웃, IP 주소, 진동 옵션 및 커스텀 이미지가 LocalStorage에 안전하게 동기화되어 앱을 재시작해도 이전 설정을 그대로 유지합니다.
-                            </p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs text-emerald-400 font-semibold">
-                            <span>LocalStorage Auto Sync</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Target Games Section -->
-        <section id="games" class="py-20 border-b border-slate-800/60 relative">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-2">Compatibility</h2>
-                    <p class="text-3xl sm:text-4xl font-black text-white">지원 대상 PC 게임 및 시뮬레이터</p>
-                    <p class="text-slate-400 text-sm sm:text-base mt-3">윈도우 PC 환경의 리듬 게임들을 손쉬운 터치 컨트롤러로 완벽 플레이하세요.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Game 1 -->
-                    <div class="bg-[#111827] border border-slate-800 p-8 rounded-3xl text-center relative overflow-hidden group hover:border-cyan-500/60 transition">
-                        <div class="w-16 h-16 rounded-2xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition">
-                            <i class="fa-brands fa-steam"></i>
-                        </div>
-                        <h3 class="text-xl font-extrabold text-white mb-2">펌프 잇 업 라이즈</h3>
-                        <p class="text-xs text-cyan-400 font-bold mb-4">Steam PC Version</p>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            스팀(Steam) 플랫폼으로 정식 출시된 펌프 잇 업 라이즈의 모든 곡을 터치 컨트롤 패드로 편리하게 플레이할 수 있습니다.
-                        </p>
-                    </div>
-
-                    <!-- Game 2 -->
-                    <div class="bg-[#111827] border border-slate-800 p-8 rounded-3xl text-center relative overflow-hidden group hover:border-amber-500/60 transition">
-                        <div class="w-16 h-16 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-compact-disc"></i>
-                        </div>
-                        <h3 class="text-xl font-extrabold text-white mb-2">X새니티 (X-Sanity)</h3>
-                        <p class="text-xs text-amber-400 font-bold mb-4">PC Rhythm Simulator</p>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            PIU 커뮤니티 팬들에게 사랑받는 X새니티 및 StepMania 계열 시뮬레이터와 완벽하게 키 매핑이 연동됩니다.
-                        </p>
-                    </div>
-
-                    <!-- Game 3 -->
-                    <div class="bg-[#111827] border border-slate-800 p-8 rounded-3xl text-center relative overflow-hidden group hover:border-red-500/60 transition">
-                        <div class="w-16 h-16 rounded-2xl bg-red-500/20 text-red-400 flex items-center justify-center text-3xl mx-auto mb-6 group-hover:scale-110 transition">
-                            <i class="fa-solid fa-gamepad"></i>
-                        </div>
-                        <h3 class="text-xl font-extrabold text-white mb-2">기타 PIU 스타일 게임</h3>
-                        <p class="text-xs text-red-400 font-bold mb-4">Custom Keymap Games</p>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            키보드 입력(Q/E/S/Z/C 및 넘버패드 7/9/5/1/3) 기반의 모든 PC 펌프 잇 업 스타일 게임을 다양하게 즐기실 수 있습니다.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Controller Layout Interactive Preview Section -->
+        <!-- Interactive Showcase Section -->
         <section id="preview" class="py-20 bg-[#0d121f] border-b border-slate-800/60">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-12">
@@ -338,7 +197,6 @@
                     <p class="text-slate-400 text-sm sm:text-base mt-3">탭을 클릭하여 펌프티콘의 다양한 발판 모드 모양을 직접 확인해 보세요.</p>
                 </div>
 
-                <!-- Mode Select Tabs -->
                 <div class="flex flex-wrap justify-center gap-2 mb-8" id="layout-tabs">
                     <button onclick="switchLayoutPreview('single1p')" id="tab-single1p" class="px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-cyan-500 text-slate-950 shadow-lg transition">싱글 1P (5키)</button>
                     <button onclick="switchLayoutPreview('single2p')" id="tab-single2p" class="px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-slate-800 text-slate-300 hover:text-white transition">싱글 2P (5키)</button>
@@ -346,50 +204,10 @@
                     <button onclick="switchLayoutPreview('double')" id="tab-double" class="px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-slate-800 text-slate-300 hover:text-white transition">더블 모드 (10키)</button>
                 </div>
 
-                <!-- Interactive Preview Box -->
                 <div class="bg-[#111827] border border-slate-800 rounded-3xl p-6 sm:p-10 max-w-2xl mx-auto shadow-2xl relative min-h-[320px] flex flex-col items-center justify-center">
-                    <div id="preview-display" class="w-full max-w-md aspect-square flex items-center justify-center">
-                        <!-- Dynamic Pad Rendering -->
-                    </div>
+                    <div id="preview-display" class="w-full max-w-md aspect-square flex items-center justify-center"></div>
                     <div id="preview-desc" class="text-xs text-slate-400 font-medium mt-6 text-center">
                         Q / E / S / Z / C 키 세트로 구성된 표준 싱글 1P 5키 발판 레이아웃
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick Connection Guide -->
-        <section id="guide" class="py-20 border-b border-slate-800/60">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-2">How It Works</h2>
-                    <p class="text-3xl sm:text-4xl font-black text-white">3단계 간편 연결 가이드</p>
-                    <p class="text-slate-400 text-sm sm:text-base mt-3">복잡한 설정 없이 쉽고 빠르게 PC와 연동할 수 있습니다.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-[#111827] border border-slate-800 p-6 rounded-3xl relative">
-                        <div class="w-10 h-10 rounded-xl bg-cyan-500 text-slate-950 font-black flex items-center justify-center mb-4 text-lg">1</div>
-                        <h3 class="text-lg font-bold text-white mb-2">PC 수신기 프로그램 실행</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                            PC에서 펌프티콘 WebSocket 수신기(Receiver)를 구동하고 화면에 출력되는 QR 코드를 확인합니다.
-                        </p>
-                    </div>
-
-                    <div class="bg-[#111827] border border-slate-800 p-6 rounded-3xl relative">
-                        <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-950 font-black flex items-center justify-center mb-4 text-lg">2</div>
-                        <h3 class="text-lg font-bold text-white mb-2">앱에서 QR 코드 스캔</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                            스마트폰/태블릿 펌프티콘 설정에서 'QR 코드 스캔'을 누르고 PC 화면의 QR 코드를 인식시킵니다.
-                        </p>
-                    </div>
-
-                    <div class="bg-[#111827] border border-slate-800 p-6 rounded-3xl relative">
-                        <div class="w-10 h-10 rounded-xl bg-emerald-400 text-slate-950 font-black flex items-center justify-center mb-4 text-lg">3</div>
-                        <h3 class="text-lg font-bold text-white mb-2">게임 플레이 시작!</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                            자동으로 연결 완료 배지가 초록색으로 변경되면 스팀 펌프 잇 업 라이즈 및 X새니티를 즐겁게 플레이합니다!
-                        </p>
                     </div>
                 </div>
             </div>
@@ -406,11 +224,6 @@
             <p class="text-center md:text-left text-slate-500">
                 Created for Pump It Up Rises (Steam) & X-Sanity Enthusiasts.
             </p>
-            <div class="flex space-x-4 text-slate-400">
-                <button onclick="downloadSourceCode()" class="hover:text-cyan-400 transition font-bold">
-                    <i class="fa-solid fa-code mr-1"></i> index.html 다운로드
-                </button>
-            </div>
         </div>
     </footer>
 
@@ -473,7 +286,6 @@
             const data = PREVIEW_DATA[mode];
             if (!data) return;
 
-            // Tab button style sync
             ['single1p', 'single2p', 'half', 'double'].forEach(m => {
                 const btn = document.getElementById(`tab-${m}`);
                 if (m === mode) {
@@ -483,7 +295,6 @@
                 }
             });
 
-            // Render Preview Pad
             const display = document.getElementById('preview-display');
             const desc = document.getElementById('preview-desc');
             desc.innerText = data.desc;
@@ -502,20 +313,6 @@
             display.innerHTML = html;
         }
 
-        function downloadSourceCode() {
-            // Source Code Download helper
-            const blob = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'index.html';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-
-        // Initialize preview on page load
         window.addEventListener('DOMContentLoaded', () => {
             switchLayoutPreview('single1p');
         });
