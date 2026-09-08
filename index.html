@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>펌프티콘 (PUMPTCON) - Pump Touch Controller</title>
+    <title>펌프티콘 (PUMP.T.CON) - Pump Touch Controller</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -46,21 +46,6 @@
         .neon-glow-cyan {
             box-shadow: 0 0 25px rgba(6, 182, 212, 0.4);
         }
-        .neon-glow-red {
-            box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
-        }
-        .neon-glow-yellow {
-            box-shadow: 0 0 20px rgba(234, 179, 8, 0.4);
-        }
-        .neon-glow-blue {
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
 
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
@@ -83,9 +68,7 @@
     <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-black text-white text-xl shadow-lg neon-glow-cyan">
-                    P
-                </div>
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=100&auto=format&fit=crop" onerror="this.src='https://placehold.co/40x40/111827/06b6d4?text=P';" alt="펌프티콘 로고" class="w-10 h-10 rounded-xl object-cover shadow-lg neon-glow-cyan border border-cyan-500/40">
                 <div>
                     <span class="font-black text-lg sm:text-xl tracking-tight text-white block">펌프티콘 <span class="text-cyan-400 text-xs sm:text-sm font-semibold ml-1">PUMP.T.CON</span></span>
                 </div>
@@ -93,49 +76,64 @@
 
             <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-300">
                 <a href="#about" class="hover:text-cyan-400 transition">1. 펌프티콘은?</a>
-                <a href="#features" class="hover:text-cyan-400 transition">2. 주요 기능</a>
-                <a href="#preview" class="hover:text-cyan-400 transition">3. 미리보기</a>
+                <a href="#reasons" class="hover:text-cyan-400 transition">2. 개발 이유</a>
+                <a href="#features" class="hover:text-cyan-400 transition">3. 주요 기능</a>
+                <a href="#preview" class="hover:text-cyan-400 transition">4. 미리보기 이미지</a>
             </nav>
         </div>
     </header>
 
     <main class="flex-1">
-        <section id="about" class="relative py-16 sm:py-24 lg:py-32 overflow-hidden border-b border-slate-800/60">
+        <section id="about" class="relative py-16 sm:py-24 lg:py-28 overflow-hidden border-b border-slate-800/60">
             <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none"></div>
             
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-bold mb-6">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <span>Pump It Up Touch Controller</span>
+                <div class="flex justify-center mb-8">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=300&auto=format&fit=crop" onerror="this.src='https://placehold.co/180x180/111827/06b6d4?text=PUMP.T.CON';" alt="펌프티콘 아이콘" class="w-36 h-36 sm:w-44 sm:h-44 rounded-3xl object-cover shadow-2xl neon-glow-cyan border-2 border-cyan-500/50">
                 </div>
 
-                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-8 leading-tight">
-                    펌프티콘은?
-                </h1>
+                <div class="text-center mb-12">
+                    <p class="text-3xl sm:text-4xl font-black text-white">1. 펌프티콘은?</p>
+                </div>
 
                 <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-6 sm:p-10 text-left shadow-2xl space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">
-                    <p>
                         <strong class="text-white font-bold text-base sm:text-lg">펌프티콘</strong>은 안드로이드 기반 스마트폰과 태블릿 PC를 터치 기반 컨트롤러로 만들어주는 모바일 기기 기반의 터치 컨트롤러로 키보드를 대신할 새로운 조작 시스템입니다.
-                    </p>
-                    <p>
+                    <br>
                         아직은 개발 단계의 앱으로 윈도용 펌프잇업 라이즈와 그 외 윈도에서 실행가능한 펌프 기반 게임들에서 모두 사용가능한 터치 컨트롤러입니다.
-                    </p>
-                    <p>
+                    <br>
                         원래 펌프콘으로 이름을 지으려고 했었으나 네이버나 구글에 펌프콘으로 검색해 보니 시중에 판매되는 제품들이 쭈욱 나오던 터라 뭔가 차별화를 주기 위한 이름을 고민하다가 <strong class="text-cyan-400 font-bold">펌프티콘(PUMP.T.CON)</strong>으로 이름을 만들었습니다.
-                    </p>
-                    <p class="text-slate-400 text-xs sm:text-sm pt-2 border-t border-slate-800/80">
-                        * 펌프잇업 터치 컨트롤러(Pump it up Touch Controller)가 정식 이름 이긴 하지만 너무 길기 때문에 줄여서 펌프티콘으로 하기로 했습니다.
-                    </p>
+                    <br>
+                        펌프잇업 터치 컨트롤러(Pump it up Touch Controller)가 정식 이름 이긴 하지만 너무 길기 때문에 줄여서 펌프티콘으로 하기로 했습니다.
+                </div>
+            </div>
+        </section>
+
+        <section id="reasons" class="py-16 sm:py-24 bg-[#090d16] border-b border-slate-800/60">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <p class="text-3xl sm:text-4xl font-black text-white">2. 개발 이유</p>
+                </div>
+
+                <div class="bg-[#111827]/80 backdrop-blur-sm border border-slate-800/80 rounded-3xl p-6 sm:p-10 text-left shadow-2xl space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">                    
+                        PC에서 게임 플레이가 키보드를 기반으로 진행이 되는데 키보드로 누르기에는 키가 작은 감이 있습니다.
+                    <br>
+                        적응하면 무리가 없긴 하겠지만 키보드 배열이 대각선 사선 구조라서 펌프잇업 게임을 하기에는 조작이 애매하다는 생각이 들었습니다.
+                    <br>
+                        시중에 판매되는 PC용 컨트롤러가 있지만 가격이 15~20만 원 사이에 높은 가격대가 형성되어 있기도 하고 부피가 생각보다 크다는 부분도 있습니다.
+                    <br>
+                        안다미로에서도 펌프잇업 라이즈 전용 컨트롤러 정식 출시가 예정되어 있기는 하지만 아직 정식 출시 전이기도 하고 과연 저걸로 잘 될까 싶기도 하고 그렇습니다.
+                    <br>
+                        고민하다가 모바일 앱 방식으로 직접 만들어보기로 하고 AI의 도움을 받아서 제작하는 중입니다.
+                    <br>
+                        아직은 개발 중인 단계로 공개된 버전은 없습니다.
                 </div>
             </div>
         </section>
 
         <section id="features" class="py-20 bg-[#0d121f] border-b border-slate-800/60">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-2">Key Features</h2>
-                    <p class="text-3xl sm:text-4xl font-black text-white">2. 주요 기능</p>
-                    <p class="text-slate-400 text-sm sm:text-base mt-3">모바일 터치 환경에 최적화된 강력한 기능들을 확인하세요.</p>
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <p class="text-3xl sm:text-4xl font-black text-white">3. 주요 기능</p>
                 </div>
 
                 <div class="space-y-8">
@@ -159,7 +157,7 @@
                             <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl font-black">
                                 <i class="fa-solid fa-gamepad"></i>
                             </div>
-                            <h3 class="text-xl sm:text-2xl font-bold text-white"># 다중 게임 모드 및 버전 지원</h3>
+                            <h3 class="text-xl sm:text-2xl font-bold text-white"># 다중 게임 모드 및 버전 지원.</h3>
                         </div>
                         <p class="text-slate-300 text-sm sm:text-base leading-relaxed pl-0 sm:pl-16">
                             <strong class="text-white">모드 다양성:</strong> 싱글 1P, 싱글 2P, 하프, 더블 모드를 지원하며 각각의 모드 별로 4가지(전통적인 PIU 스타일, 모바일 최적화 레이아웃, 피아노 건반 스타일)의 버튼 배열을 제공해서 사용자가 원하는 배열의 컨트롤러를 사용할 수 있습니다.
@@ -172,7 +170,7 @@
                             <div class="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl font-black">
                                 <i class="fa-solid fa-network-wired"></i>
                             </div>
-                            <h3 class="text-xl sm:text-2xl font-bold text-white"># PC와의 간단한 연결</h3>
+                            <h3 class="text-xl sm:text-2xl font-bold text-white"># PC와의 간단한 연결.</h3>
                         </div>
                         <p class="text-slate-300 text-sm sm:text-base leading-relaxed pl-0 sm:pl-16">
                             PC용 펌프티콘 리시버 프로그램을 켜서 적혀 있는 PC의 IP 주소를 앱에 넣으면 바로 연결되어서 사용이 가능합니다.<br>
@@ -186,7 +184,7 @@
                             <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl font-black">
                                 <i class="fa-solid fa-hand-pointer"></i>
                             </div>
-                            <h3 class="text-xl sm:text-2xl font-bold text-white"># 멀티터치 및 터치 진동 효과</h3>
+                            <h3 class="text-xl sm:text-2xl font-bold text-white"># 멀티터치 및 터치 진동 효과.</h3>
                         </div>
                         <p class="text-slate-300 text-sm sm:text-base leading-relaxed pl-0 sm:pl-16">
                             여러 버튼을 동시에 누르기와 롱노드의 길게 누르기까지 모두 지원하며 버튼을 누를 때 누른다는 느낌을 주기 위해서 터치 진동 효과가 동작합니다.<br>
@@ -213,10 +211,9 @@
 
         <section id="preview" class="py-20 bg-[#0b0f19]">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-2">Screenshots & UI</h2>
-                    <p class="text-3xl sm:text-4xl font-black text-white">3. 미리보기 이미지</p>
-                    <p class="text-slate-400 text-sm sm:text-base mt-3">추후 펌프티콘 앱 실행 화면 및 컨트롤러 구동 미리보기 이미지가 들어갈 공간입니다.</p>
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <p class="text-3xl sm:text-4xl font-black text-white">4. 미리보기 이미지</p>
+                    <p class="text-slate-400 text-sm sm:text-base mt-3">추후 펌프티콘 앱 실행 화면 및 컨트롤러 구동 미리보기 이미지가 들어갈 빈 공간입니다.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -226,7 +223,7 @@
                             <i class="fa-regular fa-image"></i>
                         </div>
                         <h4 class="text-white font-bold text-base mb-1">미리보기 이미지 영역 01</h4>
-                        <p class="text-slate-500 text-xs">컨트롤러 실행 화면 스크린샷이 배치될 자리입니다.</p>
+                        <p class="text-slate-500 text-xs">나중에 이미지를 넣을 수 있도록 공간을 비워두었습니다.</p>
                     </div>
 
                     <!-- Placeholder Box 2 -->
@@ -235,7 +232,7 @@
                             <i class="fa-regular fa-image"></i>
                         </div>
                         <h4 class="text-white font-bold text-base mb-1">미리보기 이미지 영역 02</h4>
-                        <p class="text-slate-500 text-xs">PC 연동 및 버튼 레이아웃 화면이 배치될 자리입니다.</p>
+                        <p class="text-slate-500 text-xs">나중에 이미지를 넣을 수 있도록 공간을 비워두었습니다.</p>
                     </div>
                 </div>
             </div>
@@ -245,7 +242,7 @@
     <footer class="bg-[#070a12] border-t border-slate-800/80 py-12 text-slate-400 text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex items-center space-x-3">
-                <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center font-black text-slate-950 text-base">P</div>
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=80&auto=format&fit=crop" onerror="this.src='https://placehold.co/32x32/111827/06b6d4?text=P';" alt="펌프티콘 로고" class="w-8 h-8 rounded-lg object-cover border border-cyan-500/40">
                 <span class="font-bold text-slate-200 text-sm">펌프티콘 (PUMP.T.CON)</span>
             </div>
             <p class="text-slate-500 text-center sm:text-right">
